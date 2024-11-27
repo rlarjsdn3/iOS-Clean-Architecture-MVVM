@@ -73,7 +73,12 @@ extension CoreDataMoviesQueriesStorage {
         inContext context: NSManagedObjectContext
     ) throws {
         let request: NSFetchRequest = MovieQueryEntity.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: #keyPath(MovieQueryEntity.createdAt),
+                                                    ascending: false)]
+        var result = try context.fetch(request)
         
+        removeDuplicates(for: query, in: &result, inContext: context)
+        removeQueries(limit: maxStorageLimit - 1, in: result, inContext: context)
     }
     
     private func removeDuplicates(
