@@ -41,7 +41,7 @@ final class UserDefaultsMoviesQueriesStorage {
     }
 }
 
-extension UserDefaultsMoviesQueriesStorage: MoviesQueryStorage {
+extension UserDefaultsMoviesQueriesStorage: MoviesQueriesStorage {
     
     func fetchRecentQueries(
         maxCount: Int,

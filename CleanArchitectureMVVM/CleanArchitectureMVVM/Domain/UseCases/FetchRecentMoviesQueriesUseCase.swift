@@ -17,12 +17,12 @@ final class FetchRecentMoviesQueriesUseCase: UseCase {
     
     private let requestValue: RequestValue
     private let completion: (ResultValue) -> Void
-    private let moviesQuriesRespository: MoviesQueryRepository
+    private let moviesQuriesRespository: MoviesQueriesRepository
     
     init(
         requestValue: RequestValue,
         completion: @escaping (ResultValue) -> Void,
-        moviesQuriesRespository: MoviesQueryRepository
+        moviesQuriesRespository: MoviesQueriesRepository
     ) {
         self.requestValue = requestValue
         self.completion = completion

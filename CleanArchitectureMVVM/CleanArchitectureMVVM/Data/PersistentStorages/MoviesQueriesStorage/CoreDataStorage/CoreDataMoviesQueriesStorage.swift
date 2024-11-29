@@ -22,7 +22,7 @@ final class CoreDataMoviesQueriesStorage {
     }
 }
 
-extension CoreDataMoviesQueriesStorage: MoviesQueryStorage {
+extension CoreDataMoviesQueriesStorage: MoviesQueriesStorage {
     
     func fetchRecentQueries(
         maxCount: Int,

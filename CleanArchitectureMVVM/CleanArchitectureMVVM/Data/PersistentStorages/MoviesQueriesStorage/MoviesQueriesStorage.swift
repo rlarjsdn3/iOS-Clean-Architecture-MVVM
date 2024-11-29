@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MoviesQueryStorage {
+protocol MoviesQueriesStorage {
     func fetchRecentQueries(
         maxCount: Int,
         completion: @escaping (Result<[MovieQuery], any Error>) -> Void
