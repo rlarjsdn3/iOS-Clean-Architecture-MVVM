@@ -73,10 +73,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="contentView" destination="URz-eU-usl" id="uqN-yv-Ufo"/>
-                        <outlet property="emptyDataLabel" destination="f6J-2l-iab" id="7eT-UL-qzF"/>
-                        <outlet property="moviesListContainer" destination="dgg-tT-8fn" id="RcZ-CD-wCq"/>
-                        <outlet property="searchBarContainer" destination="Pfu-J9-aom" id="BmD-lq-IZN"/>
+                        <outlet property="contentView" destination="URz-eU-usl" id="Og2-we-YC6"/>
+                        <outlet property="emptyDataLabel" destination="f6J-2l-iab" id="x8d-nC-nhY"/>
+                        <outlet property="moviesListContainer" destination="dgg-tT-8fn" id="4vr-vv-uZr"/>
+                        <outlet property="searchBarContainer" destination="Pfu-J9-aom" id="yWM-se-yfD"/>
                         <outlet property="suggestionsListContainer" destination="xZl-fe-PlP" id="6hU-xB-rVM"/>
                     </connections>
                 </viewController>
