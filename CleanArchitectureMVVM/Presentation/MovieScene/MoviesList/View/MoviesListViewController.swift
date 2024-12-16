@@ -35,10 +35,17 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
+        setupBehaviours()
+        bind(to: viewModel)
+        viewModel.viewDidLoad()
     }
     
     private func bind(to viewModel: any MoviesListViewModel) {
-        
+        viewModel.items.observe(on: self) { [weak self] _ in self?.updateItems() }
+        viewModel.loading.observe(on: self) { [weak self] in self?.updateLoading($0) }
+        viewModel.query.observe(on: self) { [weak self] in self?.updateSearchQuery($0) }
+        viewModel.error.observe(on: self) { [weak self] in self?.showError($0) }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -96,6 +103,16 @@ final class MoviesListViewController: UIViewController, StoryboardInstantiable, 
             return
         }
         viewModel.showQueriesSuggestions()
+    }
+    
+    private func updateSearchQuery(_ query: String) {
+        searchController.isActive = false
+        searchController.searchBar.text = query
+    }
+    
+    private func showError(_ error: String) {
+        guard !error.isEmpty else { return }
+        showAlert(title: viewModel.errorTitle, message: error)
     }
     
 }
