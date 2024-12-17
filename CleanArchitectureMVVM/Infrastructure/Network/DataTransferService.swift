@@ -74,8 +74,8 @@ final class DefaultDataTransferService {
     
     init(
         with networkService: any NetworkService,
-        errorResolver: any DataTransferErrorResolver,
-        errorLogger: any DataTransferErrorLogger
+        errorResolver: any DataTransferErrorResolver = DefaultdataTransferErrorResolver(),
+        errorLogger: any DataTransferErrorLogger = DefaultDataTransferErrorLogger()
     ) {
         self.networkService = networkService
         self.errorResolver = errorResolver

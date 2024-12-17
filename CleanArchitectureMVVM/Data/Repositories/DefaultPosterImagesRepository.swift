@@ -14,7 +14,7 @@ final class DefaultPosterImagesRepository {
     
     init(
         dataTransferService: any DataTransferService,
-        backgroundQueue: any DataTransferDispatchQueue
+        backgroundQueue: any DataTransferDispatchQueue = DispatchQueue.global(qos: .userInitiated)
     ) {
         self.dataTransferService = dataTransferService
         self.backgroundQueue = backgroundQueue
