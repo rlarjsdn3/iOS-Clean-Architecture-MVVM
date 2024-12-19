@@ -30,7 +30,7 @@ protocol NetworkService {
 protocol NetworkSessionManager {
     typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
     
-    func requset(_ request: URLRequest,
+    func request(_ request: URLRequest,
                  completion: @escaping CompletionHandler) -> NetworkCancellable
 }
 
@@ -63,7 +63,7 @@ final class DefaultNetworkService {
         completion: @escaping CompletionHandler
     ) -> NetworkCancellable {
         
-        let sessionDataTask = sessionManager.requset(request) { data, response, requestError in
+        let sessionDataTask = sessionManager.request(request) { data, response, requestError in
             
             if let requestError = requestError {
                 var error: NetworkError
@@ -122,7 +122,7 @@ extension DefaultNetworkService: NetworkService {
 // And it can be injected into NetworkService instead of default one.
 
 final class DefaultNetworkSessionManager: NetworkSessionManager {
-    func requset(
+    func request(
         _ request: URLRequest,
         completion: @escaping CompletionHandler
     ) -> any NetworkCancellable {
