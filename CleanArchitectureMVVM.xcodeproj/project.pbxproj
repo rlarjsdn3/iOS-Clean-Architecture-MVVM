@@ -34,6 +34,7 @@
 			membershipExceptions = (
 				Common/DispatchQueueType.swift,
 				Domain/Entities/Movie.swift,
+				Infrastructure/Network/DataTransferService.swift,
 				Infrastructure/Network/Endpoint.swift,
 				Infrastructure/Network/Network.swift,
 				Infrastructure/Network/NetworkService.swift,
