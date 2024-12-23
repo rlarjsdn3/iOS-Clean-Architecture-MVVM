@@ -8,7 +8,7 @@
 import Foundation
 
 extension Movie {
-    static func sub(id: Movie.ID = "id1",
+    static func stub(id: Movie.ID = "id1",
                     title: String = "title1",
                     genre: Movie.Genre = .adventure,
                     posterPath: String? = "/1",

@@ -32,8 +32,13 @@
 		9E3E95482D143C9E00651D17 /* Exceptions for "CleanArchitectureMVVM" folder in "CleanArchitectureMVVMTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Common/Cancellable.swift,
 				Common/DispatchQueueType.swift,
 				Domain/Entities/Movie.swift,
+				Domain/Entities/MovieQuery.swift,
+				Domain/Interfaces/Repositories/MoviesQueriesRepository.swift,
+				Domain/Interfaces/Repositories/MoviesRepository.swift,
+				Domain/UseCases/SearchMoviesUseCase.swift,
 				Infrastructure/Network/DataTransferService.swift,
 				Infrastructure/Network/Endpoint.swift,
 				Infrastructure/Network/Network.swift,
