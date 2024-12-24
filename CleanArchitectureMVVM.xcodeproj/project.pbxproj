@@ -33,16 +33,21 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Common/Cancellable.swift,
+				Common/ConnectionError.swift,
 				Common/DispatchQueueType.swift,
 				Domain/Entities/Movie.swift,
 				Domain/Entities/MovieQuery.swift,
 				Domain/Interfaces/Repositories/MoviesQueriesRepository.swift,
 				Domain/Interfaces/Repositories/MoviesRepository.swift,
+				Domain/Interfaces/Repositories/PosterImagesRepository.swift,
 				Domain/UseCases/SearchMoviesUseCase.swift,
 				Infrastructure/Network/DataTransferService.swift,
 				Infrastructure/Network/Endpoint.swift,
 				Infrastructure/Network/Network.swift,
 				Infrastructure/Network/NetworkService.swift,
+				Presentation/MovieScene/MoviesList/ViewModel/MoviesListItemViewModel.swift,
+				Presentation/MovieScene/MoviesList/ViewModel/MoviesListViewModel.swift,
+				Presentation/Utils/Observable.swift,
 			);
 			target = 9E3E953A2D14398600651D17 /* CleanArchitectureMVVMTests */;
 		};
