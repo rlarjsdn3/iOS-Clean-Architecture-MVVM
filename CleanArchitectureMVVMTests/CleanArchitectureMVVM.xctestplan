@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "3781D8B2-87D1-4AB4-9ABB-970742127CA3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CleanArchitectureMVVM.xcodeproj",
+      "identifier" : "9E1862962CEAD06B00105D8B",
+      "name" : "CleanArchitectureMVVM"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:CleanArchitectureMVVM.xcodeproj",
+        "identifier" : "9E3E953A2D14398600651D17",
+        "name" : "CleanArchitectureMVVMTests"
+      }
+    }
+  ],
+  "version" : 1
+}

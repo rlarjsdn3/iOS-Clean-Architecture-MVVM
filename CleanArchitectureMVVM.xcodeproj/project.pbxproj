@@ -40,14 +40,26 @@
 				Domain/Interfaces/Repositories/MoviesQueriesRepository.swift,
 				Domain/Interfaces/Repositories/MoviesRepository.swift,
 				Domain/Interfaces/Repositories/PosterImagesRepository.swift,
+				Domain/UseCases/FetchRecentMoviesQueriesUseCase.swift,
+				Domain/UseCases/Protocol/UseCase.swift,
 				Domain/UseCases/SearchMoviesUseCase.swift,
 				Infrastructure/Network/DataTransferService.swift,
 				Infrastructure/Network/Endpoint.swift,
 				Infrastructure/Network/Network.swift,
 				Infrastructure/Network/NetworkService.swift,
+				Presentation/MovieScene/MovieDetails/ViewModel/MovieDetailsViewModel.swift,
 				Presentation/MovieScene/MoviesList/ViewModel/MoviesListItemViewModel.swift,
 				Presentation/MovieScene/MoviesList/ViewModel/MoviesListViewModel.swift,
+				Presentation/MovieScene/MoviesQueriesList/ViewModel/MoviesQueryListItemViewModel.swift,
+				Presentation/MovieScene/MoviesQueriesList/ViewModel/MoviesQueryListViewModel.swift,
 				Presentation/Utils/Observable.swift,
+			);
+			target = 9E3E953A2D14398600651D17 /* CleanArchitectureMVVMTests */;
+		};
+		C77F491F2D1D2D4700BACA60 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVMTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CleanArchitectureMVVM.xctestplan,
 			);
 			target = 9E3E953A2D14398600651D17 /* CleanArchitectureMVVMTests */;
 		};
@@ -65,6 +77,9 @@
 		};
 		9E3E953C2D14398600651D17 /* CleanArchitectureMVVMTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C77F491F2D1D2D4700BACA60 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVMTests" target */,
+			);
 			path = CleanArchitectureMVVMTests;
 			sourceTree = "<group>";
 		};
