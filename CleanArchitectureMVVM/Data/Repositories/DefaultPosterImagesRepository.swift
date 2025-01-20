@@ -31,7 +31,7 @@ extension DefaultPosterImagesRepository: PosterImagesRepository {
         
         let endpoint = APIEndpoints.getMoviePoster(path: imagePath, width: width)
         let task = RepositoryTask()
-        task.networkTask = dataTransferService.request(with: endpoint, on: backgroundQueue){ (result: Result<Data, DataTransferError>) in
+        task.networkTask = dataTransferService.request(with: endpoint, on: backgroundQueue) { (result: Result<Data, DataTransferError>) in
             
             let result = result.mapError { $0 as Error }
             completion(result)

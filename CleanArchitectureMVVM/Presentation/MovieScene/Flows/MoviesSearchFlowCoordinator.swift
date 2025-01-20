@@ -34,7 +34,7 @@ final class MoviesSearchFlowCoordinator {
     }
     
     func start() {
-        // Note: here we keep string reference with actions, this way this flow do not need to be strong referenced
+        // Note: here we keep strong reference with actions, this way this flow do not need to be strong referenced
         let actions = MoviesListViewModelActions(
             showMovieDetails: showMovieDetails,
             showMovieQueriesSuggestions: showMovieQueriesSuggestions,

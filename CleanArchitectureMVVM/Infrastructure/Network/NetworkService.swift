@@ -79,7 +79,6 @@ final class DefaultNetworkService {
                 self.logger.log(responseData: data, response: response)
                 completion(.success(data))
             }
-            
         }
         
         logger.log(request: request)

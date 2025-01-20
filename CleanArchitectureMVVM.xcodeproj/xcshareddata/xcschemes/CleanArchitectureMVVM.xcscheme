@@ -30,8 +30,11 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:CleanArchitectureMVVM.xctestplan"
+            reference = "container:CleanArchitectureMVVMTests/CleanArchitectureMVVMTestPlan.xctestplan"
             default = "YES">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:CleanArchitectureMVVMUITestPlan.xctestplan">
          </TestPlanReference>
       </TestPlans>
       <Testables>
@@ -43,6 +46,17 @@
                BlueprintIdentifier = "9E3E953A2D14398600651D17"
                BuildableName = "CleanArchitectureMVVMTests.xctest"
                BlueprintName = "CleanArchitectureMVVMTests"
+               ReferencedContainer = "container:CleanArchitectureMVVM.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C7BB98CC2D3E429B0072E376"
+               BuildableName = "CleanArchitectureMVVMUITests.xctest"
+               BlueprintName = "CleanArchitectureMVVMUITests"
                ReferencedContainer = "container:CleanArchitectureMVVM.xcodeproj">
             </BuildableReference>
          </TestableReference>

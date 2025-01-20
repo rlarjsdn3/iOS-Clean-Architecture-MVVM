@@ -22,11 +22,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         
         window?.rootViewController = navigationController
-//        appFlowCoordinator = AppFlowCoordinator(
-//            navigationController: navigationController,
-//            appDIContainer: appDIContainer
-//        )
-//        appFlowCoordinator?.start()
+        appFlowCoordinator = AppFlowCoordinator(
+            navigationController: navigationController,
+            appDIContainer: appDIContainer
+        )
+        appFlowCoordinator?.start()
         window?.makeKeyAndVisible()
     }
 

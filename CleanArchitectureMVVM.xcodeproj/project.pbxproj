@@ -14,11 +14,19 @@
 			remoteGlobalIDString = 9E1862962CEAD06B00105D8B;
 			remoteInfo = CleanArchitectureMVVM;
 		};
+		C7BB98D32D3E429B0072E376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E18628F2CEAD06B00105D8B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E1862962CEAD06B00105D8B;
+			remoteInfo = CleanArchitectureMVVM;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9E1862972CEAD06B00105D8B /* CleanArchitectureMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanArchitectureMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3E953B2D14398600651D17 /* CleanArchitectureMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7BB98CD2D3E429B0072E376 /* CleanArchitectureMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanArchitectureMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,10 +64,24 @@
 			);
 			target = 9E3E953A2D14398600651D17 /* CleanArchitectureMVVMTests */;
 		};
-		C77F491F2D1D2D4700BACA60 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVMTests" target */ = {
+		C739202C2D3E53820036DAD6 /* Exceptions for "CleanArchitectureMVVM" folder in "CleanArchitectureMVVMUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				CleanArchitectureMVVM.xctestplan,
+				Presentation/Utils/AccessibilityIdentifier.swift,
+			);
+			target = C7BB98CC2D3E429B0072E376 /* CleanArchitectureMVVMUITests */;
+		};
+		C747D2EE2D3CFE9C00552522 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVM" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CleanArchitectureMVVMTestPlan.xctestplan,
+			);
+			target = 9E1862962CEAD06B00105D8B /* CleanArchitectureMVVM */;
+		};
+		C747D2EF2D3CFE9C00552522 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVMTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CleanArchitectureMVVMTestPlan.xctestplan,
 			);
 			target = 9E3E953A2D14398600651D17 /* CleanArchitectureMVVMTests */;
 		};
@@ -71,6 +93,7 @@
 			exceptions = (
 				9E1862BF2CEAD06C00105D8B /* Exceptions for "CleanArchitectureMVVM" folder in "CleanArchitectureMVVM" target */,
 				9E3E95482D143C9E00651D17 /* Exceptions for "CleanArchitectureMVVM" folder in "CleanArchitectureMVVMTests" target */,
+				C739202C2D3E53820036DAD6 /* Exceptions for "CleanArchitectureMVVM" folder in "CleanArchitectureMVVMUITests" target */,
 			);
 			path = CleanArchitectureMVVM;
 			sourceTree = "<group>";
@@ -78,9 +101,15 @@
 		9E3E953C2D14398600651D17 /* CleanArchitectureMVVMTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				C77F491F2D1D2D4700BACA60 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVMTests" target */,
+				C747D2EE2D3CFE9C00552522 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVM" target */,
+				C747D2EF2D3CFE9C00552522 /* Exceptions for "CleanArchitectureMVVMTests" folder in "CleanArchitectureMVVMTests" target */,
 			);
 			path = CleanArchitectureMVVMTests;
+			sourceTree = "<group>";
+		};
+		C7BB98CE2D3E429B0072E376 /* CleanArchitectureMVVMUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CleanArchitectureMVVMUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -100,6 +129,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7BB98CA2D3E429B0072E376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -108,6 +144,7 @@
 			children = (
 				9E1862992CEAD06B00105D8B /* CleanArchitectureMVVM */,
 				9E3E953C2D14398600651D17 /* CleanArchitectureMVVMTests */,
+				C7BB98CE2D3E429B0072E376 /* CleanArchitectureMVVMUITests */,
 				9E1862982CEAD06B00105D8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,6 +154,7 @@
 			children = (
 				9E1862972CEAD06B00105D8B /* CleanArchitectureMVVM.app */,
 				9E3E953B2D14398600651D17 /* CleanArchitectureMVVMTests.xctest */,
+				C7BB98CD2D3E429B0072E376 /* CleanArchitectureMVVMUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +207,29 @@
 			productReference = 9E3E953B2D14398600651D17 /* CleanArchitectureMVVMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C7BB98CC2D3E429B0072E376 /* CleanArchitectureMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7BB98D72D3E429B0072E376 /* Build configuration list for PBXNativeTarget "CleanArchitectureMVVMUITests" */;
+			buildPhases = (
+				C7BB98C92D3E429B0072E376 /* Sources */,
+				C7BB98CA2D3E429B0072E376 /* Frameworks */,
+				C7BB98CB2D3E429B0072E376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7BB98D42D3E429B0072E376 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C7BB98CE2D3E429B0072E376 /* CleanArchitectureMVVMUITests */,
+			);
+			name = CleanArchitectureMVVMUITests;
+			packageProductDependencies = (
+			);
+			productName = CleanArchitectureMVVMUITests;
+			productReference = C7BB98CD2D3E429B0072E376 /* CleanArchitectureMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,7 +237,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					9E1862962CEAD06B00105D8B = {
@@ -184,6 +245,10 @@
 					};
 					9E3E953A2D14398600651D17 = {
 						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9E1862962CEAD06B00105D8B;
+					};
+					C7BB98CC2D3E429B0072E376 = {
+						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 9E1862962CEAD06B00105D8B;
 					};
 				};
@@ -204,6 +269,7 @@
 			targets = (
 				9E1862962CEAD06B00105D8B /* CleanArchitectureMVVM */,
 				9E3E953A2D14398600651D17 /* CleanArchitectureMVVMTests */,
+				C7BB98CC2D3E429B0072E376 /* CleanArchitectureMVVMUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +283,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9E3E95392D14398600651D17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BB98CB2D3E429B0072E376 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,6 +313,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C7BB98C92D3E429B0072E376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -247,6 +327,11 @@
 			isa = PBXTargetDependency;
 			target = 9E1862962CEAD06B00105D8B /* CleanArchitectureMVVM */;
 			targetProxy = 9E3E953F2D14398600651D17 /* PBXContainerItemProxy */;
+		};
+		C7BB98D42D3E429B0072E376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E1862962CEAD06B00105D8B /* CleanArchitectureMVVM */;
+			targetProxy = C7BB98D32D3E429B0072E376 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -461,6 +546,42 @@
 			};
 			name = Release;
 		};
+		C7BB98D52D3E429B0072E376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DQM269FVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimsowol.CleanArchitectureMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanArchitectureMVVM;
+			};
+			name = Debug;
+		};
+		C7BB98D62D3E429B0072E376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DQM269FVB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kimsowol.CleanArchitectureMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CleanArchitectureMVVM;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +608,15 @@
 			buildConfigurations = (
 				9E3E95422D14398600651D17 /* Debug */,
 				9E3E95432D14398600651D17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7BB98D72D3E429B0072E376 /* Build configuration list for PBXNativeTarget "CleanArchitectureMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7BB98D52D3E429B0072E376 /* Debug */,
+				C7BB98D62D3E429B0072E376 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

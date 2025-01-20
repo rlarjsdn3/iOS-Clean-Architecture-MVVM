@@ -74,7 +74,7 @@ final class DefaultDataTransferService {
     
     init(
         with networkService: any NetworkService,
-        errorResolver: any DataTransferErrorResolver = DefaultdataTransferErrorResolver(),
+        errorResolver: any DataTransferErrorResolver = DefaultDataTransferErrorResolver(),
         errorLogger: any DataTransferErrorLogger = DefaultDataTransferErrorLogger()
     ) {
         self.networkService = networkService
@@ -175,7 +175,7 @@ final class DefaultDataTransferErrorLogger: DataTransferErrorLogger {
 }
 
 // MARK: - Error Resolver
-class DefaultdataTransferErrorResolver: DataTransferErrorResolver {
+class DefaultDataTransferErrorResolver: DataTransferErrorResolver {
     init() { }
     func resolve(error: NetworkError) -> any Error {
         return error
